@@ -7,9 +7,9 @@ library(pander)
 
 By the end of this chapter, you should have mastered the following:
 
-* Install R installed
-* Choose and possibly install an operating environment
-* Enter a few basic commands
+* Installing R
+* Choosing and possibly installing an operating environment
+* Entering a few basic commands
 
 ## Installation
 
