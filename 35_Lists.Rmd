@@ -1,6 +1,6 @@
 # Lists
 
-In this chapter, we're going to learn about lists. Lists can be a bit confusing the first time you begin to use them. Heaven knows it took me ages to get comfortable with them. However, they're a very powerful way to structure data and, once mastered, will give you all kinds of control over pretty much anything the world can throw at you. If vectors are R's atom, lists are molecules. 
+In this chapter, we're going to learn about lists. Lists can be a bit confusing the first time you begin to use them. Heaven knows it took me ages to get comfortable with them. However, they're a very powerful way to structure data and, once mastered, will give you all kinds of control over pretty much anything the world can throw at you. If vectors are `R`'s atom, lists are molecules. 
 
 By the end of this chapter, you will know:
 
@@ -33,7 +33,7 @@ make_block(x)
 
 This is why we use `[[` to set an item in a list. 
 
-Don't worry if this doesn't make sense yet. It's difficult for most R programmers.
+Don't worry if this doesn't make sense yet. It's difficult for most `R` programmers.
 
 ### Recursive storage
 
@@ -68,6 +68,7 @@ y$Age
 ### `lapply`
 
 `lapply` is one of many functions which may be applied to lists. Can be difficult at first, but very powerful. Applies the same function to each element of a list.
+<div class="RSComment" style="color:red; font-weight: bold;"> Brian - I though lapply returned a list but that the `X` argument need not be a list - though I recognize that it is coreced to a list.</div>
 
 ```{r }
 myList <- list(firstVector = c(1:10)

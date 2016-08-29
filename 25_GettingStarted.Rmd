@@ -1,5 +1,10 @@
 # Getting started
 
+```{r, message=FALSE, warning=FALSE, include=FALSE}
+library(pander)
+```
+
+
 ### Mathematical Operators
 
 ```{r echo=FALSE, results='asis'}
@@ -50,7 +55,7 @@ sqrt(exp(sin(pi)))
 ```
 
 ### A few mathematical functions
-
+<div class="RSComment" style="color:red; font-weight: bold;"> Brian - I don't quite understand the purpose of the next code chunk. </div>
 ```{r eval=FALSE}
 ?S3groupGeneric
 ```
@@ -69,7 +74,7 @@ sqrt(exp(sin(pi)))
 ??cluster
 ```
 
-Within RStudio, the TAB key will autocomplete
+Within RStudio, the TAB key will autocomplete function arguments.
 
 ## The working directory
 
@@ -91,17 +96,17 @@ Try to stick with relative pathnames. This makes work portable.
 
 ### Directory paths
 
-R prefers *nix style directories, i.e. "/", NOT "\\". Windows prefers "\\".
+`R` prefers *nix style directories, i.e. "/", NOT "\\". Windows prefers "\\".
 
 "\\" is an "escape" character, used for things like tabs and newline characters. To get a single slash, just type it twice.
 
 More on file operations in the handout.
 
-### Source files
-
+### Script files
+<div class="RSComment" style="color:red; font-weight: bold;"> Brian - I suggest you use `script` (adjective) so as to not to confuse with `source` (verb). </div>
 Typing, editing and debugging at the command line will get tedious quickly.
 
-A source file (file extension .R) contains a sequence of commands.
+A script file (file extension `.R`) contains a sequence of commands.
 
 Analogous to the formulae entered in a spreadsheet (but so much more powerful!)
 
@@ -132,7 +137,7 @@ Either:
 
 1. Open the file and execute the lines one at a time, or
 
-2. Use the "source" function.
+2. Use the `source` function.
 
 ```{r eval=FALSE}
 source("SomefileName.R")
@@ -171,4 +176,4 @@ lossRatio <- Losses / Premium
 * What is the area of a cylinder with radius = e and height = pi?
 * What arguments are listed for the "plot" function?
 * Find the help file for a generalized linear model
-* Create a script which calculates the area of a cylinder. From a new script, assign the value 4 to a variable and source the other file. Assign the value 8 to your variable and source again. What happened?
+* Create a script which calculates the area of a cylinder. From a new script, assign the value `4` to a variable and source the other file. Assign the value `8` to your variable and `source` again. What happened?
